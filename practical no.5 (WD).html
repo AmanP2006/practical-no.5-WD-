@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Practical No.5 (WD) - Resume</title>
+  <style>
+    :root{--accent:#0b74de;--muted:#666}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:#f7f9fc;color:#222;margin:0;padding:24px}
+    .container{max-width:900px;margin:0 auto;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(12,30,50,.08);overflow:hidden}
+    header{display:flex;gap:20px;align-items:center;padding:28px}
+    .photo{width:120px;height:120px;border-radius:12px;object-fit:cover;border:4px solid #fff;box-shadow:0 4px 12px rgba(12,30,50,.06)}
+    h1{margin:0;font-size:1.6rem}
+    .meta{color:var(--muted);margin-top:6px}
+    nav{display:flex;gap:12px;margin-left:auto}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600}
+    main{display:grid;grid-template-columns:2fr 1fr;gap:24px;padding:24px}
+    section{background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:8px}
+    h2{margin:0 0 12px 0;font-size:1.05rem;color:var(--accent)}
+    ul{margin:0;padding-left:1.1rem}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px 6px;border-bottom:1px solid #eee;text-align:left}
+    th{background:#f4f8ff;font-weight:700}
+    .contact a{display:inline-block;margin-right:10px;color:var(--accent);text-decoration:none}
+    @media (max-width:800px){main{grid-template-columns:1fr}.photo{width:96px;height:96px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="photo" src="https://t4.ftcdn.net/jpg/07/69/91/13/360_F_769911303_0T8kmcnpMHATztUj5bpmnNnDeT0ce8Bu.jpg" alt="Profile photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/120'">
+      <div>
+        <h1>Alex Johnson</h1>
+        <div class="meta">Front-end Developer • JavaScript • HTML5 & CSS3</div>
+        <div class="contact" style="margin-top:8px">
+          <a href="mailto:alex.johnson@example.com">alex.johnson@example.com</a>
+          <a href="https://linkedin.com/in/example" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/example" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <nav>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <section id="objective">
+          <h2>Professional Summary</h2>
+          <p>Enthusiastic front-end developer with 4+ years building responsive, accessible web applications. Passionate about creating elegant user experiences and writing clean, maintainable code.</p>
+        </section>
+
+        <section id="experience" style="margin-top:16px">
+          <h2>Work Experience</h2>
+          <ol>
+            <li>
+              <strong>Senior Front-end Developer</strong> — BrightApps (2022 - Present)
+              <ul>
+                <li>Led migration to a component-driven design system using React and TypeScript.</li>
+                <li>Improved bundle size by 30% through code-splitting and tree-shaking.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Front-end Developer</strong> — PixelForge (2019 - 2022)
+              <ul>
+                <li>Built interactive UI components and optimized accessibility for screen readers.</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <section id="projects" style="margin-top:16px">
+          <h2>Selected Projects</h2>
+          <ul>
+            <li><a href="https://example-site.com" target="_blank" rel="noopener">E-commerce UI Kit</a> — component library and theming.</li>
+            <li><a href="https://todo-app.example" target="_blank" rel="noopener">Todo PWA</a> — offline-first progressive web app.</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML5, CSS3, SASS</li>
+            <li>JavaScript (ES6+), TypeScript</li>
+            <li>React, Next.js</li>
+            <li>Accessibility (A11y) & Performance</li>
+          </ul>
+        </section>
+
+        <section id="education" style="margin-top:16px">
+          <h2>Education</h2>
+          <table>
+            <thead>
+              <tr><th>Year</th><th>Degree</th><th>Institution</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2015 - 2019</td><td>B.Sc. Computer Science</td><td>State University</td></tr>
+              <tr><td>2019</td><td>Certification: Web Accessibility</td><td>Online Academy</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section style="margin-top:16px">
+          <h2>Interests</h2>
+          <ul>
+            <li>Open-source contributions</li>
+            <li>Design systems</li>
+            <li>Photography</li>
+          </ul>
+        </section>
+
+        <section style="margin-top:16px">
+          <h2>Download</h2>
+          <p><a href="practical%20no.5%20(WD).html" download>Download this resume (HTML)</a></p>
+        </section>
+      </aside>
+    </main>
+
+    <footer style="padding:16px 24px;border-top:1px solid #f0f2f6;background:#fbfdff;text-align:center;color:var(--muted)">
+      <small>Built with HTML5 — Practical No.5 (WD)</small>
+    </footer>
+  </div>
+</body>
+</html>
